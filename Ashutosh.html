@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ashutosh Jung Thapa | Full Stack Developer</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">
+          <span class="logo-icon">◆</span>
+          <span>PORTFOLIO</span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <p class="tagline">GET EVERY SINGLE SOLUTIONS.</p>
+        <h1>I'm <span class="highlight">Ashutosh Jung Thapa</span></h1>
+        <h2>Full Stack Developer</h2>
+        <p class="bio">
+          Passionate Full Stack Developer with strong interest in problem solving and project management. 
+          I build modern, scalable web applications using HTML, CSS, React, and Node.js.
+        </p>
+        
+        <div class="hero-buttons">
+          <button class="btn btn-primary" onclick="document.getElementById('projects').scrollIntoView({ behavior: 'smooth' })">
+            View My Projects
+          </button>
+          <button class="btn btn-secondary" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })">
+            Hire Me
+          </button>
+        </div>
+      </div>
+      
+      <div class="hero-image">
+        <img src="your-photo.jpg" alt="Ashutosh Jung Thapa" id="profile-pic">
+      </div>
+    </div>
+
+    <div class="hero-bottom">
+      <div class="container">
+        <div class="bottom-grid">
+          <div>
+            <h3>Designing With Passion While</h3>
+            <h3>Exploring The World.</h3>
+          </div>
+          <div>
+            <h3>Any Type Of Query</h3>
+            <h3>& Discussion.</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Me -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <p>
+          Hi, I'm Ashutosh Jung Thapa, a dedicated Full Stack Developer from Nepal. 
+          I love turning ideas into functional and beautiful web applications.
+        </p>
+        <p>
+          With strong skills in React, Node.js, and modern web technologies, 
+          I focus on clean code, problem solving, and effective project management.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section skills-section">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">HTML5 & CSS3</div>
+        <div class="skill-card">JavaScript (ES6+)</div>
+        <div class="skill-card">React.js</div>
+        <div class="skill-card">Node.js & Express</div>
+        <div class="skill-card">MongoDB</div>
+        <div class="skill-card">Problem Solving</div>
+        <div class="skill-card">Project Management</div>
+        <div class="skill-card">Responsive Design</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section - Your Projects Visible Here -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2>Featured Projects</h2>
+      <div class="projects-grid">
+
+        <!-- Project 1: Tails of Joy -->
+        <div class="project-card">
+          <img src="https://via.placeholder.com/600x400/4CAF50/ffffff?text=Tails+of+Joy" alt="Tails of Joy">
+          <div class="project-info">
+            <h3>Tails of Joy</h3>
+            <p>Pet adoption web application that helps people find and adopt pets from shelters. 
+               Built to connect pet lovers with rescue organizations.</p>
+            <small>React • Node.js • MongoDB</small>
+            <div class="project-links" style="margin-top: 15px;">
+              <button class="btn btn-primary" style="padding: 10px 24px; font-size: 0.95rem;">View Project</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: GitHub Finder -->
+        <div class="project-card">
+          <img src="https://via.placeholder.com/600x400/2196F3/ffffff?text=GitHub+Finder" alt="GitHub Finder">
+          <div class="project-info">
+            <h3>GitHub Finder</h3>
+            <p>A clean and fast website to search GitHub users and repositories using the GitHub API. 
+               Built with React for smooth user experience.</p>
+            <small>React • JavaScript • GitHub API</small>
+            <div class="project-links" style="margin-top: 15px;">
+              <button class="btn btn-primary" style="padding: 10px 24px; font-size: 0.95rem;">View Project</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Get In Touch</h2>
+      <div class="contact-info">
+        <p><strong>Email:</strong> <a href="mailto:ashutoshjanga@gmail.com">ashutoshjanga@gmail.com</a></p>
+        <p><strong>Phone:</strong> <a href="tel:9811340497">9811340497</a></p>
+        <p>Feel free to reach out for collaborations or discussions.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer with Social Links -->
+  <footer class="footer">
+    <div class="container">
+      <div class="social-links">
+        <a href="https://www.facebook.com/ashutosh.jung.thapa.880951" target="_blank" title="Facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <!-- Add LinkedIn and GitHub here when you send the links -->
+      </div>
+      <p>&copy; 2026 Ashutosh Jung Thapa. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="style.js"></script>
+</body>
+</html>
