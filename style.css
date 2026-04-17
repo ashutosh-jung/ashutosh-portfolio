@@ -17,6 +17,7 @@ body {
   padding: 0 40px;
 }
 
+/* Header */
 header {
   background: white;
   box-shadow: 0 2px 10px rgba(0,0,0,0.05);
@@ -107,6 +108,7 @@ nav {
 .hero-buttons {
   display: flex;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 .btn {
@@ -138,6 +140,35 @@ nav {
 .btn-secondary:hover {
   background: #333;
   color: white;
+  transform: translateY(-3px);
+}
+
+/* ==================== DOWNLOAD CV BUTTON ==================== */
+.btn-cv {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 32px;
+  background: transparent;
+  border: 2px solid #e63939;
+  color: #e63939;
+  border-radius: 8px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-cv:hover {
+  background: #e63939;
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(230, 57, 57, 0.3);
+}
+
+.btn-cv i {
+  font-size: 1rem;
 }
 
 .hero-image img {
@@ -209,54 +240,109 @@ nav {
   box-shadow: 0 15px 25px rgba(0,0,0,0.1);
 }
 
-/* Projects */
+/* ==================== CLEAN PROJECTS SECTION ==================== */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 30px;
+  margin-top: 50px;
 }
 
 .project-card {
-  background: white;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-  transition: all 0.3s;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 32px 28px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.07);
+  transition: all 0.4s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .project-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 20px 30px rgba(0,0,0,0.15);
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
 }
 
-.project-card img {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
+.project-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px;
 }
 
-.project-info {
-  padding: 20px;
+.project-icon {
+  font-size: 32px;
 }
 
-.project-info h3 {
-  margin-bottom: 10px;
-  font-size: 1.4rem;
+.project-name {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #555;
 }
 
-.project-info p {
-  color: #666;
-  font-size: 0.98rem;
-  margin-bottom: 12px;
+.project-card h3 {
+  font-size: 1.65rem;
+  margin: 10px 0 16px 0;
+  color: #1a1a1a;
+  line-height: 1.3;
 }
 
-.project-info small {
+.project-card p {
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 24px;
+  flex-grow: 1;
+}
+
+.tech-stack {
   color: #e63939;
+  font-size: 0.98rem;
   font-weight: 500;
+  margin-bottom: 28px;
 }
 
-.project-links {
-  margin-top: 15px;
+/* Project Buttons */
+.project-buttons {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.btn-view {
+  background: #e63939;
+  color: white;
+  padding: 13px 28px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+.btn-view:hover {
+  background: #d62828;
+  transform: translateY(-3px);
+}
+
+.btn-source {
+  background: transparent;
+  color: #0066ff;
+  border: 2px solid #0066ff;
+  padding: 13px 28px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+.btn-source:hover {
+  background: #0066ff;
+  color: white;
+  transform: translateY(-3px);
 }
 
 /* Contact */
@@ -310,17 +396,41 @@ nav {
   font-size: 0.95rem;
 }
 
-/* Responsive */
+/* Responsive Design */
 @media (max-width: 992px) {
   .hero-content {
     grid-template-columns: 1fr;
     text-align: center;
   }
+
   .hero-image { 
     order: -1; 
   }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
   .bottom-grid { 
     grid-template-columns: 1fr; 
     gap: 40px; 
+  }
+  
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn,
+  .btn-cv {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
   }
 }
